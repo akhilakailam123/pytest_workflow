@@ -16,10 +16,10 @@ jobs:
           python-version: 3.9
 
       - name: Installing aws cli
-        shell:
+        shell: bash
         run : |
           sudo apt update
-          sudo apt install aws cli
+          sudo apt install awscli
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
